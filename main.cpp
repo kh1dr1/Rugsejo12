@@ -20,7 +20,7 @@ int main()
     cout << "Kursas: " << kursas << '\n';
     cout << "Studiju programa: " << studiju_programa << '\n';*/
 
-    string klubo_pavadinimas = "Real Madrid";
+    /*string klubo_pavadinimas = "Real Madrid";
     int ikurimo_metai = 1902;
     string vadovas = "Karlas Ancelotis";
     string arena_stadionas = "\"Santiago Bernabeu\" stadionas";
@@ -31,7 +31,17 @@ int main()
     cout << "Ikurimo metai: " << ikurimo_metai << '\n';
     cout << "Vadovas: " << vadovas << '\n';
     cout << "Arena / Stadionas: " << arena_stadionas << '\n';
-    cout << "Arenos / Stadiono vietu skaicius: " << arenos_vietu_skaicius << '\n';
+    cout << "Arenos / Stadiono vietu skaicius: " << arenos_vietu_skaicius << '\n';*/
+
+    string marke = "Opel";
+    string modelis = "Zafira";
+    int metai = 2010;
+    float litrazas = 2.0;
+    string spalva = "sidabrine";
+
+    cout << "Automobilis " << marke << " " << modelis
+    << " buvo pagamintas " << metai << " metais. Jo motoras "
+    << litrazas << " litru litrazo. Automobilio spalva: " << spalva << "." << endl;
 
     return 0;
 }
