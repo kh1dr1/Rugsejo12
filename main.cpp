@@ -43,7 +43,7 @@ int main()
     << " buvo pagamintas " << metai << " metais. Jo motoras "
     << litrazas << " litru litrazo. Automobilio spalva: " << spalva << "." << endl;*/
 
-    int a = 13;
+    /*int a = 13;
     int b = 5;
     float c = 17.5;
 
@@ -52,7 +52,14 @@ int main()
     cout << "a / static_cast<double>(b) + 2 * c = " << a / static_cast<double>(b) + 2 * c << endl;
     cout << "14 % 3 + 6.3 + b / a = " << 14 % 3 + 6.3 + b / a << endl;
     cout << "static_cast<int>(c) % 5 + a - b = " << static_cast<int>(c) % 5 + a - b << endl;
-    cout << "13.5 / 2 + 4.0 * 3.5 + 18 = " << 13.5 / 2 + 4.0 * 3.5 + 18 << endl;
+    cout << "13.5 / 2 + 4.0 * 3.5 + 18 = " << 13.5 / 2 + 4.0 * 3.5 + 18 << endl;*/
+
+    float a, b, c, d, e;
+    cout << "Iveskite 5 skaicius atskirtus tarpais:";
+    cin >> a >> b >> c >> d >> e;
+
+    cout << "Skaiciu vidurkis yra:";
+    cout << (a + b + c + d + e) / 5 << endl;
 
     return 0;
 }
