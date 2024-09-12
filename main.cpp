@@ -54,12 +54,31 @@ int main()
     cout << "static_cast<int>(c) % 5 + a - b = " << static_cast<int>(c) % 5 + a - b << endl;
     cout << "13.5 / 2 + 4.0 * 3.5 + 18 = " << 13.5 / 2 + 4.0 * 3.5 + 18 << endl;*/
 
-    float a, b, c, d, e;
+    /*float a, b, c, d, e;
     cout << "Iveskite 5 skaicius atskirtus tarpais:";
     cin >> a >> b >> c >> d >> e;
 
     cout << "Skaiciu vidurkis yra:";
-    cout << (a + b + c + d + e) / 5 << endl;
+    cout << (a + b + c + d + e) / 5 << endl;*/
+
+    int num;
+    int n;
+    int sum = 0;
+    int dig = 0;
+
+    cout << "Iveskite skaiciu:";
+    cin >> num;
+
+    // algoritmas
+    n = num;
+    while (n != 0)
+    {
+        dig = n % 10;
+        n = n / 10;
+        sum = sum + dig;
+    }
+
+    cout << "Skaiciaus skaitmenu suma:" << sum << endl;
 
     return 0;
 }
