@@ -33,7 +33,7 @@ int main()
     cout << "Arena / Stadionas: " << arena_stadionas << '\n';
     cout << "Arenos / Stadiono vietu skaicius: " << arenos_vietu_skaicius << '\n';*/
 
-    string marke = "Opel";
+    /*string marke = "Opel";
     string modelis = "Zafira";
     int metai = 2010;
     float litrazas = 2.0;
@@ -41,7 +41,18 @@ int main()
 
     cout << "Automobilis " << marke << " " << modelis
     << " buvo pagamintas " << metai << " metais. Jo motoras "
-    << litrazas << " litru litrazo. Automobilio spalva: " << spalva << "." << endl;
+    << litrazas << " litru litrazo. Automobilio spalva: " << spalva << "." << endl;*/
+
+    int a = 13;
+    int b = 5;
+    float c = 17.5;
+
+    cout << "a + b - c = " << a + b - c << endl;
+    cout << "15 / 2 + c = " << 15 / 2 + c << endl;
+    cout << "a / static_cast<double>(b) + 2 * c = " << a / static_cast<double>(b) + 2 * c << endl;
+    cout << "14 % 3 + 6.3 + b / a = " << 14 % 3 + 6.3 + b / a << endl;
+    cout << "static_cast<int>(c) % 5 + a - b = " << static_cast<int>(c) % 5 + a - b << endl;
+    cout << "13.5 / 2 + 4.0 * 3.5 + 18 = " << 13.5 / 2 + 4.0 * 3.5 + 18 << endl;
 
     return 0;
 }
