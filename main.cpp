@@ -68,7 +68,6 @@ int main()
 
     // Uzduotis #6: Skaicio skaitmenu suma
     int num;
-    int n;
     int sum = 0;
     int dig = 0;
 
@@ -76,11 +75,9 @@ int main()
     cin >> num;
 
     // algoritmas
-    n = num;
-    while (n != 0)
+    for (int n = num; n != 0; n = n / 10)
     {
         dig = n % 10;
-        n = n / 10;
         sum = sum + dig;
     }
 
