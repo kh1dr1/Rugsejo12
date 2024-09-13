@@ -3,6 +3,15 @@
 
 using namespace std;
 
+int rask_skaitmenu_suma(int n, int sum)
+{
+    if (n == 0) return 0;
+
+    // n = n / 10
+    // sum = sum + dig = sum + n % 10
+    return rask_skaitmenu_suma(n / 10, sum + n % 10);
+}
+
 int main()
 {
     // Uzduotis #1: Studentas
@@ -68,20 +77,22 @@ int main()
 
     // Uzduotis #6: Skaicio skaitmenu suma
     int num;
-    int sum = 0;
+    // int sum = 0;
     int dig = 0;
 
     cout << "Iveskite skaiciu:";
     cin >> num;
 
-    // algoritmas
-    for (int n = num; n != 0; n = n / 10)
-    {
-        dig = n % 10;
-        sum = sum + dig;
-    }
+    // algoritmas (rekursinis)
 
-    cout << "Skaicio skaitmenu suma:" << sum << endl;
+
+    // for (int n = num; n != 0; n = n / 10)
+    // {
+    //     dig = n % 10;
+    //     sum = sum + dig;
+    // }
+
+    cout << "Skaicio skaitmenu suma:" << rask_skaitmenu_suma(num) << endl;
 
     return 0;
 }
