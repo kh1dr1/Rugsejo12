@@ -3,13 +3,16 @@
 
 using namespace std;
 
-int rask_skaitmenu_suma(int n, int sum)
+int sum_of_digits(int n)
 {
-    if (n == 0) return 0;
-
-    // n = n / 10
-    // sum = sum + dig = sum + n % 10
-    return rask_skaitmenu_suma(n / 10, sum + n % 10);
+    if (n < 10)
+        return n; // Base case: single-digit number
+    else
+    {
+        int last_digit = n % 10;
+        int remaining_number = n / 10; // floor division
+        return last_digit + sum_of_digits(remaining_number);
+    }
 }
 
 int main()
@@ -77,22 +80,12 @@ int main()
 
     // Uzduotis #6: Skaicio skaitmenu suma
     int num;
-    // int sum = 0;
-    int dig = 0;
 
     cout << "Iveskite skaiciu:";
     cin >> num;
 
     // algoritmas (rekursinis)
-
-
-    // for (int n = num; n != 0; n = n / 10)
-    // {
-    //     dig = n % 10;
-    //     sum = sum + dig;
-    // }
-
-    cout << "Skaicio skaitmenu suma:" << rask_skaitmenu_suma(num) << endl;
+    cout << "Skaicio skaitmenu suma:" << sum_of_digits(num) << endl;
 
     return 0;
 }
